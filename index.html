@@ -251,15 +251,12 @@
 
   <script>
     function downloadFile() {
-
-      var fileUrl = 'var fileUrl = 'https://example.com/files/Jakara.Edwards-House.pdf';
+      var fileUrl = 'https://example.com/path/to/Jakara.Edwards-House.pdf';
       
-   
       var link = document.createElement('a');
       link.href = fileUrl;
-      link.download = '';
+      link.download = 'Jakara.Edwards-House.pdf';
       
-   
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -267,6 +264,7 @@
   </script>
 </body>
 </html>
+
 
             <button class="btn btn-primary">Download cv</button>
           </div>
