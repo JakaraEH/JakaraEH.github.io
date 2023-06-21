@@ -239,6 +239,34 @@
 
           <div class="btn-group">
             <button class="btn btn-secondary">Hire me</button>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Download Example</title>
+</head>
+<body>
+  <div>
+    <button class="btn btn-primary" onclick="downloadFile()">Download CV</button>
+  </div>
+
+  <script>
+    function downloadFile() {
+
+      var fileUrl = 'file:///C:/Users/jakara.edwards-house/Documents/Resumes/Jakara.Edwards-House.pdf';
+      
+   
+      var link = document.createElement('a');
+      link.href = fileUrl;
+      link.download = '';
+      
+   
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+</html>
 
             <button class="btn btn-primary">Download cv</button>
           </div>
